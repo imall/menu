@@ -104,12 +104,23 @@ header .sub .tel:active { opacity: .7; }
 .modal .sum b { color: var(--red); font-size: 26px; }
 .modal .acts { padding: 0 16px 10px; display: flex; gap: 10px; }
 .modal .acts button {
-  flex: 1; padding: 13px 8px; border-radius: 28px; border: none;
+  flex: 1; padding: 12px 8px; border-radius: 28px;
+  border: 2px solid transparent;
   font-size: 16px; font-weight: 800; cursor: pointer; white-space: nowrap;
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  transition: background .15s, box-shadow .15s, transform .05s;
 }
-.modal .acts button:active { transform: scale(.98); }
-.modal .share { background: var(--orange); color: #fff; box-shadow: 0 3px 10px rgba(242,101,34,.4); }
-.modal .copy { background: #fff; color: var(--orange); border: 2px solid var(--orange); }
+.modal .acts button svg { width: 17px; height: 17px; flex-shrink: 0; }
+.modal .acts button:active { transform: scale(.97); }
+.modal .acts .share {
+  background: var(--orange); color: #fff; border-color: var(--orange);
+  box-shadow: 0 3px 10px rgba(242,101,34,.35);
+}
+.modal .acts .share:hover { background: #e05a1a; }
+.modal .acts .copy {
+  background: rgba(242,101,34,.09); color: var(--orange); border-color: var(--orange);
+}
+.modal .acts .copy:hover { background: rgba(242,101,34,.18); }
 .modal .fallback { padding: 0 16px 12px; }
 .modal .fallback .hint { font-size: 13px; color: #777; margin-bottom: 6px; }
 .modal .fallback textarea {

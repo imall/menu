@@ -58,8 +58,20 @@
         </div>
         <div class="sum"><span>總金額</span><b>${{ total }}</b></div>
         <div class="acts">
-          <button class="share" @click="shareOrder">分享訂單</button>
-          <button class="copy" @click="copyLink">複製連結</button>
+          <button class="share" @click="shareOrder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
+              <line x1="8.6" y1="10.5" x2="15.4" y2="6.5" /><line x1="8.6" y1="13.5" x2="15.4" y2="17.5" />
+            </svg>
+            分享訂單
+          </button>
+          <button class="copy" @click="copyLink">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" />
+              <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
+            </svg>
+            複製連結
+          </button>
         </div>
         <div class="fallback" v-if="fallbackText">
           <div class="hint">長按下方文字全選複製：</div>
