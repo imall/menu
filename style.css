@@ -102,13 +102,14 @@ header .sub .tel:active { opacity: .7; }
   display: flex; justify-content: space-between; align-items: center; font-size: 18px;
 }
 .modal .sum b { color: var(--red); font-size: 26px; }
-.modal .share {
-  margin: 0 16px 10px; padding: 13px; width: calc(100% - 32px);
-  background: var(--orange); color: #fff; border: none; border-radius: 28px;
-  font-size: 17px; font-weight: 800; cursor: pointer;
-  box-shadow: 0 3px 10px rgba(242,101,34,.4);
+.modal .acts { padding: 0 16px 10px; display: flex; gap: 10px; }
+.modal .acts button {
+  flex: 1; padding: 13px 8px; border-radius: 28px; border: none;
+  font-size: 16px; font-weight: 800; cursor: pointer; white-space: nowrap;
 }
-.modal .share:active { transform: scale(.98); }
+.modal .acts button:active { transform: scale(.98); }
+.modal .share { background: var(--orange); color: #fff; box-shadow: 0 3px 10px rgba(242,101,34,.4); }
+.modal .copy { background: #fff; color: var(--orange); border: 2px solid var(--orange); }
 .modal .fallback { padding: 0 16px 12px; }
 .modal .fallback .hint { font-size: 13px; color: #777; margin-bottom: 6px; }
 .modal .fallback textarea {

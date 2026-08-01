@@ -57,7 +57,10 @@
           <div class="empty" v-if="orderLines.length === 0">尚未選擇任何品項</div>
         </div>
         <div class="sum"><span>總金額</span><b>${{ total }}</b></div>
-        <button class="share" @click="shareOrder">分享訂單</button>
+        <div class="acts">
+          <button class="share" @click="shareOrder">分享訂單</button>
+          <button class="copy" @click="copyLink">複製連結</button>
+        </div>
         <div class="fallback" v-if="fallbackText">
           <div class="hint">長按下方文字全選複製：</div>
           <textarea readonly rows="9" @focus="$event.target.select()">{{ fallbackText }}</textarea>

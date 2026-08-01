@@ -93,6 +93,15 @@ createApp({
       ].join("\n");
     };
 
+    const copyToClipboard = async (text, okMsg) => {
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast(okMsg);
+      } catch (err) {
+        fallbackText.value = text; // 非 HTTPS 或舊瀏覽器，改成讓使用者手動複製
+      }
+    };
+
     const shareOrder = async () => {
       const text = shareText();
       // 連結寫在 text 內而不另傳 url：部分 App 收到兩者時只會取其一
@@ -104,13 +113,11 @@ createApp({
           if (err.name === "AbortError") return; // 使用者自己取消，不是錯誤
         }
       }
-      try {
-        await navigator.clipboard.writeText(text);
-        showToast("已複製訂單，可直接貼上");
-      } catch (err) {
-        fallbackText.value = text; // 非 HTTPS 或舊瀏覽器，改成讓使用者手動複製
-      }
+      await copyToClipboard(text, "已複製訂單，可直接貼上");
     };
+
+    // 桌面的系統分享面板沒有「複製連結」也沒有 LINE，所以獨立給一顆
+    const copyLink = () => copyToClipboard(orderUrl(true), "已複製連結");
 
     const resetAll = () => {
       Object.keys(qty).forEach(k => delete qty[k]);
@@ -120,7 +127,7 @@ createApp({
 
     return {
       menu, qty, inc, dec, showModal, orderLines, total, totalCount,
-      resetAll, shareOrder, toast, fallbackText
+      resetAll, shareOrder, copyLink, toast, fallbackText
     };
   }
 }).mount("#app");
