@@ -69,9 +69,14 @@ createApp({
       return applied;
     };
 
-    const orderUrl = () => {
+    const orderUrl = (forShare = false) => {
+      const params = [];
       const code = encodeOrder();
-      return location.origin + location.pathname + (code ? "?o=" + code : "");
+      if (code) params.push("o=" + code);
+      // LINE 內建瀏覽器看到 openExternalBrowser=1 會改用系統預設瀏覽器開啟。
+      // 只加在分享出去的連結上，載入後 syncUrl 會把它從網址列清掉。
+      if (forShare) params.push("openExternalBrowser=1");
+      return location.origin + location.pathname + (params.length ? "?" + params.join("&") : "");
     };
 
     const syncUrl = () => history.replaceState(null, "", orderUrl());
@@ -84,7 +89,7 @@ createApp({
         `合計 $${total.value}`,
         "",
         "點連結可看明細／繼續加點：",
-        orderUrl()
+        orderUrl(true)
       ].join("\n");
     };
 
