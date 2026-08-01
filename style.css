@@ -102,8 +102,35 @@ header .sub .tel:active { opacity: .7; }
   display: flex; justify-content: space-between; align-items: center; font-size: 18px;
 }
 .modal .sum b { color: var(--red); font-size: 26px; }
+.modal .share {
+  margin: 0 16px 10px; padding: 13px; width: calc(100% - 32px);
+  background: var(--orange); color: #fff; border: none; border-radius: 28px;
+  font-size: 17px; font-weight: 800; cursor: pointer;
+  box-shadow: 0 3px 10px rgba(242,101,34,.4);
+}
+.modal .share:active { transform: scale(.98); }
+.modal .fallback { padding: 0 16px 12px; }
+.modal .fallback .hint { font-size: 13px; color: #777; margin-bottom: 6px; }
+.modal .fallback textarea {
+  width: 100%; border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px; font-family: inherit; font-size: 13px; line-height: 1.6;
+  background: #fafafa; color: var(--ink); resize: none;
+}
 .modal .foot { padding: 0 16px 16px; display: flex; gap: 10px; }
 .modal .foot button { flex: 1; padding: 12px; border-radius: 28px; border: none; font-size: 16px; font-weight: 700; cursor: pointer; }
 .modal .close { background: #eee; color: var(--ink); }
 .modal .reset { background: var(--red); color: #fff; }
 .empty { text-align: center; color: #999; padding: 30px; }
+
+.toast {
+  position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%);
+  background: rgba(0,0,0,.82); color: #fff;
+  padding: 11px 22px; border-radius: 24px;
+  font-size: 15px; font-weight: 600; white-space: nowrap;
+  z-index: 40; pointer-events: none;
+  animation: toast-in .18s ease-out;
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translate(-50%, 8px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}

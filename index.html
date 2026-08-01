@@ -23,14 +23,14 @@
       <template v-for="group in menu" :key="group.title">
         <div class="group-title">{{ group.title }}</div>
         <div class="grid">
-          <div class="item" v-for="item in group.items" :key="item.name" :class="{ active: qty[item.name] > 0 }">
+          <div class="item" v-for="item in group.items" :key="item.id" :class="{ active: qty[item.id] > 0 }">
             <div class="info">
               <div class="name">{{ item.name }}</div>
               <div class="price">${{ item.price }}</div>
             </div>
             <div class="stepper">
-              <button class="minus" :disabled="!qty[item.name]" @click="dec(item)">−</button>
-              <span class="qty">{{ qty[item.name] || 0 }}</span>
+              <button class="minus" :disabled="!qty[item.id]" @click="dec(item)">−</button>
+              <span class="qty">{{ qty[item.id] || 0 }}</span>
               <button class="plus" @click="inc(item)">＋</button>
             </div>
           </div>
@@ -46,23 +46,30 @@
       <button class="done-btn" :disabled="totalCount === 0" @click="showModal = true">完成</button>
     </div>
 
-    <div class="overlay" v-if="showModal" @click.self="showModal = false">
+    <div class="overlay" v-if="showModal" @click.self="showModal = false; fallbackText = ''">
       <div class="modal">
         <h2>訂單明細</h2>
         <div class="list">
-          <div class="row" v-for="line in orderLines" :key="line.name">
+          <div class="row" v-for="line in orderLines" :key="line.id">
             <div><span class="nm">{{ line.name }}</span><span class="qx">${{ line.price }} × {{ line.qty }}</span></div>
             <div class="amt">${{ line.price * line.qty }}</div>
           </div>
           <div class="empty" v-if="orderLines.length === 0">尚未選擇任何品項</div>
         </div>
         <div class="sum"><span>總金額</span><b>${{ total }}</b></div>
+        <button class="share" @click="shareOrder">分享訂單</button>
+        <div class="fallback" v-if="fallbackText">
+          <div class="hint">長按下方文字全選複製：</div>
+          <textarea readonly rows="9" @focus="$event.target.select()">{{ fallbackText }}</textarea>
+        </div>
         <div class="foot">
-          <button class="close" @click="showModal = false">繼續點餐</button>
+          <button class="close" @click="showModal = false; fallbackText = ''">繼續點餐</button>
           <button class="reset" @click="resetAll">清空訂單</button>
         </div>
       </div>
     </div>
+
+    <div class="toast" v-if="toast">{{ toast }}</div>
   </div>
 
   <script src="app.js"></script>
