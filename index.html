@@ -1,92 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>3Q 脆皮雞排 — 點餐</title>
-  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div id="app">
-    <header>
-      <div class="logo">3<span>Q</span> 脆皮雞排</div>
-      <div class="sub">
-        訂購電話
-        <a class="tel" href="tel:+88652691038">(05)269-1038</a>
-        ｜
-        <a class="tel" href="tel:+886911891737">0911-891737</a>
-      </div>
-    </header>
-
-    <div class="wrap">
-      <template v-for="group in menu" :key="group.title">
-        <div class="group-title">{{ group.title }}</div>
-        <div class="grid">
-          <div class="item" v-for="item in group.items" :key="item.id" :class="{ active: qty[item.id] > 0 }">
-            <div class="info">
-              <div class="name">{{ item.name }}</div>
-              <div class="price">${{ item.price }}</div>
-            </div>
-            <div class="stepper">
-              <button class="minus" :disabled="!qty[item.id]" @click="dec(item)">−</button>
-              <span class="qty">{{ qty[item.id] || 0 }}</span>
-              <button class="plus" @click="inc(item)">＋</button>
-            </div>
-          </div>
-        </div>
-      </template>
-    </div>
-
-    <div class="bar">
-      <div class="total">
-        合計：<b>${{ total }}</b>
-        <div class="count">已選 {{ totalCount }} 件</div>
-      </div>
-      <button class="done-btn" :disabled="totalCount === 0" @click="showModal = true">完成</button>
-    </div>
-
-    <div class="overlay" v-if="showModal" @click.self="showModal = false; fallbackText = ''">
-      <div class="modal">
-        <h2>訂單明細</h2>
-        <div class="list">
-          <div class="row" v-for="line in orderLines" :key="line.id">
-            <div><span class="nm">{{ line.name }}</span><span class="qx">${{ line.price }} × {{ line.qty }}</span></div>
-            <div class="amt">${{ line.price * line.qty }}</div>
-          </div>
-          <div class="empty" v-if="orderLines.length === 0">尚未選擇任何品項</div>
-        </div>
-        <div class="sum"><span>總金額</span><b>${{ total }}</b></div>
-        <div class="acts">
-          <button class="share" @click="shareOrder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3" /><circle cx="6" cy="12" r="3" /><circle cx="18" cy="19" r="3" />
-              <line x1="8.6" y1="10.5" x2="15.4" y2="6.5" /><line x1="8.6" y1="13.5" x2="15.4" y2="17.5" />
-            </svg>
-            分享訂單
-          </button>
-          <button class="copy" @click="copyLink">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7" />
-              <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7" />
-            </svg>
-            複製連結
-          </button>
-        </div>
-        <div class="fallback" v-if="fallbackText">
-          <div class="hint">長按下方文字全選複製：</div>
-          <textarea readonly rows="9" @focus="$event.target.select()">{{ fallbackText }}</textarea>
-        </div>
-        <div class="foot">
-          <button class="close" @click="showModal = false; fallbackText = ''">繼續點餐</button>
-          <button class="reset" @click="resetAll">清空訂單</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="toast" v-if="toast">{{ toast }}</div>
-  </div>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>線上點餐</title>
+    <meta name="description" content="選擇店家開始點餐" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="線上點餐" />
+    <meta property="og:description" content="選擇店家開始點餐" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/home-main.ts"></script>
+  </body>
 </html>

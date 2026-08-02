@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "3q",
+    "name": "3Q 脆皮雞排",
+    "logo": "3{Q} 脆皮雞排",
+    "tagline": "現炸雞排・鹹酥雞・串類",
+    "emoji": "🍗",
+    "theme": {
+      "brand": "#f26522",
+      "brandTo": "#ff8a3d",
+      "accent": "#fff200",
+      "ok": "#5fae3a",
+      "danger": "#d62828"
+    }
+  }
+]

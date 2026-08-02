@@ -1,0 +1,54 @@
+@import 'tailwindcss';
+
+/*
+ * 用 inline 讓 bg-brand 這類 utility 直接展開成 var(--brand)，
+ * 各店只要覆寫 :root 的 --brand 就能整頁換色（由 vite.config 的 storeHead plugin 注入）。
+ */
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-to: var(--brand-to);
+  --color-accent: var(--accent);
+  --color-ok: var(--ok);
+  --color-danger: var(--danger);
+
+  --color-paper: #fffdf7;
+  --color-ink: #2b2b2b;
+  --color-line: #ece4d3;
+  --color-sand: #f4efe4;
+
+  --font-sans: 'Microsoft JhengHei', 'PingFang TC', system-ui, sans-serif;
+}
+
+@layer base {
+  /*
+   * 預設主題必須放在 layer 裡：各店 index.html 內聯的 <style> 是無層級的，
+   * 而無層級樣式優先於任何 layer，所以不管 <link> 排在 <style> 前後都蓋得掉。
+   * 若把這組放在 layer 外，stylesheet 會因為後載入而反過來蓋掉店家主題。
+   */
+  :root {
+    --brand: #f26522;
+    --brand-to: #ff8a3d;
+    --accent: #fff200;
+    --ok: #5fae3a;
+    --danger: #d62828;
+  }
+
+  body {
+    @apply bg-sand text-ink font-sans;
+  }
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 8px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.animate-toast-in {
+  animation: toast-in 0.18s ease-out;
+}
