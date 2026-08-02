@@ -25,11 +25,11 @@ const resetAll = () => {
       <div class="overflow-y-auto px-4 py-2">
         <div
           v-for="line in order.orderLines"
-          :key="line.id"
+          :key="line.key"
           class="flex justify-between border-b border-dashed border-line py-2.5"
         >
           <div>
-            <span class="font-semibold">{{ line.name }}</span>
+            <span class="font-semibold">{{ line.label }}</span>
             <span class="ml-1.5 text-[13px] text-neutral-500"
               >${{ line.price }} × {{ line.qty }}</span
             >

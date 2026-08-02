@@ -13,7 +13,7 @@ export const useShare = () => {
 
   const shareText = () => {
     const lines = order.orderLines.map(
-      (l) => `${l.name} $${l.price} × ${l.qty} = $${l.price * l.qty}`,
+      (l) => `${l.label} $${l.price} × ${l.qty} = $${l.price * l.qty}`,
     )
     return [
       `${meta.emoji} ${meta.name} 訂單`,

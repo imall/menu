@@ -1,0 +1,720 @@
+{
+  "phones": [],
+  "notes": [
+    "升級套餐 +49元（點心與飲料除外）：任一餐點 +49元享 薯條＋2塊麥克雞塊＋熱狗＋20元飲料，飲料可補差價。",
+    "加起司 10元。餐點均為現做，請耐心等候。"
+  ],
+  "groups": [
+    {
+      "title": "早安・私房",
+      "note": "套餐含主餐＋特大飲品一杯（伯爵紅茶或高山綠茶二選一，可加價更換）",
+      "items": [
+        {
+          "id": "p1",
+          "name": "泰式打拋豬捲餅",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p2",
+          "name": "早安培根豬肉起司菠蘿堡",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p3",
+          "name": "花醬培根牛肉起司堡",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p4",
+          "name": "蜂蜜芥末雞排蛋丹麥麵包",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p5",
+          "name": "日式豬排起司總匯",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p6",
+          "name": "雙層豬肉起司堡",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p7",
+          "name": "泰式酸辣雞排捲",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        },
+        {
+          "id": "p8",
+          "name": "豬肉培根起司鬆餅",
+          "variants": [
+            { "code": "a", "label": "單點", "price": 75 },
+            { "code": "b", "label": "套餐", "price": 99 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "果醬系列",
+      "items": [
+        {
+          "id": "j1",
+          "name": "藍莓",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 20 },
+            { "code": "k", "label": "厚片", "price": 25 },
+            { "code": "d", "label": "丹麥", "price": 40 },
+            { "code": "w", "label": "鬆餅", "price": 45 }
+          ]
+        },
+        {
+          "id": "j2",
+          "name": "草莓",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 20 },
+            { "code": "k", "label": "厚片", "price": 25 },
+            { "code": "d", "label": "丹麥", "price": 40 },
+            { "code": "w", "label": "鬆餅", "price": 45 }
+          ]
+        },
+        {
+          "id": "j3",
+          "name": "花生",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 20 },
+            { "code": "k", "label": "厚片", "price": 25 },
+            { "code": "d", "label": "丹麥", "price": 40 },
+            { "code": "w", "label": "鬆餅", "price": 45 }
+          ]
+        },
+        {
+          "id": "j4",
+          "name": "煉乳",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 20 },
+            { "code": "k", "label": "厚片", "price": 25 },
+            { "code": "d", "label": "丹麥", "price": 40 },
+            { "code": "w", "label": "鬆餅", "price": 45 }
+          ]
+        },
+        {
+          "id": "j5",
+          "name": "奶酥",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 25 },
+            { "code": "k", "label": "厚片", "price": 30 },
+            { "code": "d", "label": "丹麥", "price": 45 },
+            { "code": "w", "label": "鬆餅", "price": 50 }
+          ]
+        },
+        {
+          "id": "j6",
+          "name": "巧克力",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 25 },
+            { "code": "k", "label": "厚片", "price": 30 },
+            { "code": "d", "label": "丹麥", "price": 45 },
+            { "code": "w", "label": "鬆餅", "price": 50 }
+          ]
+        },
+        {
+          "id": "j7",
+          "name": "芒果",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 25 },
+            { "code": "k", "label": "厚片", "price": 30 },
+            { "code": "d", "label": "丹麥", "price": 45 },
+            { "code": "w", "label": "鬆餅", "price": 50 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "蛋餅",
+      "items": [
+        {
+          "id": "e1",
+          "name": "原味",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 30 },
+            { "code": "s", "label": "特酥", "price": 40 }
+          ]
+        },
+        {
+          "id": "e2",
+          "name": "玉米",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 40 },
+            { "code": "s", "label": "特酥", "price": 50 }
+          ]
+        },
+        {
+          "id": "e3",
+          "name": "起司",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 40 },
+            { "code": "s", "label": "特酥", "price": 50 }
+          ]
+        },
+        {
+          "id": "e4",
+          "name": "蔬菜",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 40 },
+            { "code": "s", "label": "特酥", "price": 50 }
+          ]
+        },
+        {
+          "id": "e5",
+          "name": "火腿",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 40 },
+            { "code": "s", "label": "特酥", "price": 50 }
+          ]
+        },
+        {
+          "id": "e6",
+          "name": "熱狗",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 45 },
+            { "code": "s", "label": "特酥", "price": 55 }
+          ]
+        },
+        {
+          "id": "e7",
+          "name": "肉鬆",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 45 },
+            { "code": "s", "label": "特酥", "price": 55 }
+          ]
+        },
+        {
+          "id": "e8",
+          "name": "香濃芋泥",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 45 },
+            { "code": "s", "label": "特酥", "price": 55 }
+          ]
+        },
+        {
+          "id": "e9",
+          "name": "培根",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 45 },
+            { "code": "s", "label": "特酥", "price": 55 }
+          ]
+        },
+        {
+          "id": "e10",
+          "name": "鮪魚",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 45 },
+            { "code": "s", "label": "特酥", "price": 55 }
+          ]
+        },
+        {
+          "id": "e11",
+          "name": "薯餅",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 50 },
+            { "code": "s", "label": "特酥", "price": 60 }
+          ]
+        },
+        {
+          "id": "e12",
+          "name": "爆漿乳酪起司",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 50 },
+            { "code": "s", "label": "特酥", "price": 60 }
+          ]
+        },
+        {
+          "id": "e13",
+          "name": "燻雞",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 50 },
+            { "code": "s", "label": "特酥", "price": 60 }
+          ]
+        },
+        {
+          "id": "e14",
+          "name": "臘腸",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 50 },
+            { "code": "s", "label": "特酥", "price": 60 }
+          ]
+        },
+        {
+          "id": "e15",
+          "name": "芋泥肉鬆",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 55 },
+            { "code": "s", "label": "特酥", "price": 65 }
+          ]
+        },
+        {
+          "id": "e16",
+          "name": "日式豬排",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 55 },
+            { "code": "s", "label": "特酥", "price": 65 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "吐司・丹麥麵包",
+      "items": [
+        {
+          "id": "t1",
+          "name": "煎蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 30 },
+            { "code": "d", "label": "丹麥", "price": 45 }
+          ]
+        },
+        {
+          "id": "t2",
+          "name": "玉米蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 40 },
+            { "code": "d", "label": "丹麥", "price": 55 }
+          ]
+        },
+        {
+          "id": "t3",
+          "name": "起司蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 40 },
+            { "code": "d", "label": "丹麥", "price": 55 }
+          ]
+        },
+        {
+          "id": "t4",
+          "name": "火腿蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 40 },
+            { "code": "d", "label": "丹麥", "price": 55 }
+          ]
+        },
+        {
+          "id": "t5",
+          "name": "肉鬆蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 45 },
+            { "code": "d", "label": "丹麥", "price": 60 }
+          ]
+        },
+        {
+          "id": "t6",
+          "name": "培根蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 45 },
+            { "code": "d", "label": "丹麥", "price": 60 }
+          ]
+        },
+        {
+          "id": "t7",
+          "name": "鮪魚蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 45 },
+            { "code": "d", "label": "丹麥", "price": 60 }
+          ]
+        },
+        {
+          "id": "t8",
+          "name": "豬肉蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 45 },
+            { "code": "d", "label": "丹麥", "price": 60 }
+          ]
+        },
+        {
+          "id": "t9",
+          "name": "麥香雞肉蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 50 },
+            { "code": "d", "label": "丹麥", "price": 65 }
+          ]
+        },
+        {
+          "id": "t10",
+          "name": "牛肉蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 55 },
+            { "code": "d", "label": "丹麥", "price": 70 }
+          ]
+        },
+        {
+          "id": "t11",
+          "name": "日式豬排蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 55 },
+            { "code": "d", "label": "丹麥", "price": 70 }
+          ]
+        },
+        {
+          "id": "t12",
+          "name": "鱈魚芝士",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 60 },
+            { "code": "d", "label": "丹麥", "price": 75 }
+          ]
+        },
+        {
+          "id": "t13",
+          "name": "蝦排蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 65 },
+            { "code": "d", "label": "丹麥", "price": 80 }
+          ]
+        },
+        {
+          "id": "t14",
+          "name": "卡啦雞腿蛋（原/辣）",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 65 },
+            { "code": "d", "label": "丹麥", "price": 80 }
+          ]
+        },
+        {
+          "id": "t15",
+          "name": "藍帶起司豬排蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 69 },
+            { "code": "d", "label": "丹麥", "price": 84 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "港式菠蘿堡",
+      "items": [
+        { "id": "pb1", "name": "起司菠蘿堡", "price": 35 },
+        { "id": "pb2", "name": "花生起司菠蘿堡", "price": 45 }
+      ]
+    },
+    {
+      "title": "漢堡",
+      "items": [
+        { "id": "b1", "name": "火腿蛋", "price": 40 },
+        { "id": "b2", "name": "培根蛋", "price": 45 },
+        { "id": "b3", "name": "豬肉蛋", "price": 45 },
+        { "id": "b4", "name": "麥香雞肉蛋", "price": 50 },
+        { "id": "b5", "name": "牛肉蛋", "price": 55 },
+        { "id": "b6", "name": "日式豬排蛋", "price": 55 },
+        { "id": "b7", "name": "鱈魚芝士", "price": 60 },
+        { "id": "b8", "name": "蝦排蛋", "price": 65 },
+        { "id": "b9", "name": "卡啦雞腿蛋（原/辣）", "price": 65 },
+        { "id": "b10", "name": "藍帶起司豬排蛋", "price": 69 },
+        { "id": "b11", "name": "日式雞排蛋（蜂蜜芥末）", "price": 75 },
+        { "id": "b12", "name": "貴妃雞排（番茄片）", "price": 75 },
+        { "id": "b13", "name": "泰式酸辣卡啦雞腿蛋", "price": 75 },
+        { "id": "b14", "name": "美式香煎雞腿（番茄片）", "price": 75 }
+      ]
+    },
+    {
+      "title": "洋蔥漢堡",
+      "items": [
+        { "id": "ob1", "name": "培根蛋", "price": 45 },
+        { "id": "ob2", "name": "豬肉蛋", "price": 45 },
+        { "id": "ob3", "name": "牛肉蛋", "price": 55 },
+        { "id": "ob4", "name": "鱈魚芝士", "price": 60 }
+      ]
+    },
+    {
+      "title": "打拋豬系列",
+      "items": [
+        { "id": "pk1", "name": "打拋豬蛋餅", "price": 50 },
+        { "id": "pk2", "name": "打拋豬蛋吐司", "price": 50 },
+        { "id": "pk3", "name": "打拋豬焗烤厚片", "price": 65 },
+        { "id": "pk4", "name": "打拋豬蛋帕尼尼", "price": 69 },
+        { "id": "pk5", "name": "打拋豬炒泡麵", "price": 79 }
+      ]
+    },
+    {
+      "title": "美味厚片",
+      "items": [
+        { "id": "th1", "name": "鮪魚焗烤厚片", "price": 60 },
+        { "id": "th2", "name": "培根焗烤厚片", "price": 60 },
+        { "id": "th3", "name": "燻雞焗烤厚片", "price": 65 }
+      ]
+    },
+    {
+      "title": "厚奶酥厚片",
+      "items": [
+        { "id": "ms1", "name": "芝麻厚奶酥厚片", "price": 45 },
+        { "id": "ms2", "name": "抹茶厚奶酥厚片", "price": 45 }
+      ]
+    },
+    {
+      "title": "韓流",
+      "items": [
+        { "id": "kr1", "name": "泡菜蛋餅", "price": 50 },
+        { "id": "kr2", "name": "泡菜抓餅", "price": 60 },
+        { "id": "kr3", "name": "泡菜培根蛋堡", "price": 60 },
+        { "id": "kr4", "name": "泡菜牛肉蛋堡", "price": 69 },
+        { "id": "kr5", "name": "泡菜豬排蛋堡", "price": 69 }
+      ]
+    },
+    {
+      "title": "燒餅",
+      "items": [
+        { "id": "sb1", "name": "燒餅蛋", "price": 35 },
+        { "id": "sb2", "name": "起司蛋", "price": 45 },
+        { "id": "sb3", "name": "麥香雞肉蛋", "price": 55 },
+        { "id": "sb4", "name": "日式豬排蛋", "price": 60 },
+        { "id": "sb5", "name": "牛肉起司蛋", "price": 69 }
+      ]
+    },
+    {
+      "title": "義式帕尼尼吐司",
+      "items": [
+        { "id": "pn1", "name": "火腿蛋", "price": 60 },
+        { "id": "pn2", "name": "肉鬆蛋", "price": 65 },
+        { "id": "pn3", "name": "鮪魚蛋", "price": 65 },
+        { "id": "pn4", "name": "燻雞蛋", "price": 69 },
+        { "id": "pn5", "name": "日式豬排蛋", "price": 75 },
+        { "id": "pn6", "name": "牛肉蛋", "price": 75 }
+      ]
+    },
+    {
+      "title": "潛艇堡",
+      "items": [
+        { "id": "su1", "name": "培根", "price": 55 },
+        { "id": "su2", "name": "鮪魚", "price": 55 },
+        { "id": "su3", "name": "燻雞", "price": 60 },
+        { "id": "su4", "name": "臘腸", "price": 60 },
+        { "id": "su5", "name": "日式豬排", "price": 65 },
+        { "id": "su6", "name": "蝦排", "price": 75 }
+      ]
+    },
+    {
+      "title": "點心",
+      "items": [
+        { "id": "s1", "name": "荷包蛋", "price": 15 },
+        { "id": "s2", "name": "薯餅", "price": 20 },
+        { "id": "s3", "name": "熱狗（3條）", "price": 25 },
+        { "id": "s4", "name": "熱狗蛋", "price": 40 },
+        { "id": "s5", "name": "玉米蛋", "price": 30 },
+        { "id": "s6", "name": "麥克雞塊（4塊）", "price": 30 },
+        { "id": "s7", "name": "麥克雞塊（6塊）", "price": 45 },
+        { "id": "s8", "name": "薯餅蛋", "price": 35 },
+        { "id": "s9", "name": "美式脆薯", "price": 35 },
+        { "id": "s10", "name": "塩味薯條", "price": 35 },
+        { "id": "s11", "name": "甘梅薯條", "price": 35 },
+        { "id": "s12", "name": "小肉豆", "price": 35 },
+        { "id": "s13", "name": "鮪魚蛋", "price": 35 },
+        { "id": "s14", "name": "QQ地瓜球", "price": 35 },
+        { "id": "s15", "name": "薯球", "price": 35 },
+        { "id": "s16", "name": "黃金地瓜條", "price": 35 },
+        { "id": "s17", "name": "杏鮑菇", "price": 35 },
+        { "id": "s18", "name": "煎餃", "price": 40 },
+        { "id": "s19", "name": "芋頭粿", "price": 40 },
+        { "id": "s20", "name": "蔥油餅加蛋", "price": 40 },
+        { "id": "s21", "name": "港式蘿蔔糕", "price": 40 },
+        { "id": "s22", "name": "港式蘿蔔糕加蛋", "price": 55 },
+        { "id": "s23", "name": "小不點球", "price": 45 },
+        { "id": "s24", "name": "雞柳條（3條）", "price": 45 },
+        { "id": "s25", "name": "鱈魚星星（4塊）", "price": 49 },
+        {
+          "id": "s26",
+          "name": "玉米濃湯",
+          "note": "冬季限定 12月～2月",
+          "variants": [
+            { "code": "m", "label": "中", "price": 35 },
+            { "code": "l", "label": "大", "price": 45 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "獨家上市・乾拌麵",
+      "note": "皆加蛋",
+      "items": [
+        {
+          "id": "dn1",
+          "name": "椒麻刀削麵",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 65 },
+            { "code": "m", "label": "加肉", "price": 75 }
+          ]
+        },
+        {
+          "id": "dn2",
+          "name": "麻醬關廟麵",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 65 },
+            { "code": "m", "label": "加肉", "price": 75 }
+          ]
+        },
+        {
+          "id": "dn3",
+          "name": "蔥油乾拌麵",
+          "variants": [
+            { "code": "n", "label": "原味", "price": 65 },
+            { "code": "m", "label": "加肉", "price": 75 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "麵食",
+      "note": "皆加蛋",
+      "items": [
+        { "id": "n1", "name": "黑胡椒鐵板麵", "price": 55 },
+        { "id": "n2", "name": "蘑菇鐵板麵", "price": 55 },
+        { "id": "n3", "name": "炒泡麵", "price": 65 },
+        { "id": "n4", "name": "泡菜炒泡麵", "price": 75 },
+        { "id": "n5", "name": "貴妃雞排炒泡麵", "price": 95 },
+        { "id": "n6", "name": "茄汁培根鐵板麵", "price": 75 },
+        { "id": "n7", "name": "中式沙茶臘腸鐵板麵", "price": 75 },
+        { "id": "n8", "name": "麻辣燙細麵（湯麵）", "price": 69 },
+        { "id": "n9", "name": "鍋燒意麵", "price": 79 },
+        { "id": "n10", "name": "鍋燒雞絲麵", "price": 79 },
+        { "id": "n11", "name": "鍋燒烏龍麵", "price": 85 },
+        { "id": "n12", "name": "韓式泡菜豬排鐵板麵", "price": 85 },
+        { "id": "n13", "name": "泡菜鍋燒意麵", "price": 89 },
+        { "id": "n14", "name": "泡菜鍋燒雞絲麵", "price": 89 },
+        { "id": "n15", "name": "泡菜鍋燒烏龍麵", "price": 95 }
+      ]
+    },
+    {
+      "title": "飲料",
+      "items": [
+        {
+          "id": "d1",
+          "name": "伯爵紅茶",
+          "variants": [
+            { "code": "m", "label": "中", "price": 20 },
+            { "code": "l", "label": "大", "price": 25 },
+            { "code": "x", "label": "特大", "price": 30 }
+          ]
+        },
+        {
+          "id": "d2",
+          "name": "高山綠茶",
+          "variants": [
+            { "code": "m", "label": "中", "price": 20 },
+            { "code": "l", "label": "大", "price": 25 },
+            { "code": "x", "label": "特大", "price": 30 }
+          ]
+        },
+        {
+          "id": "d3",
+          "name": "豆漿",
+          "variants": [
+            { "code": "m", "label": "中", "price": 25 },
+            { "code": "l", "label": "大", "price": 30 },
+            { "code": "x", "label": "特大", "price": 35 }
+          ]
+        },
+        {
+          "id": "d4",
+          "name": "豆漿紅茶",
+          "variants": [
+            { "code": "m", "label": "中", "price": 25 },
+            { "code": "l", "label": "大", "price": 30 },
+            { "code": "x", "label": "特大", "price": 35 }
+          ]
+        },
+        {
+          "id": "d5",
+          "name": "伯爵奶茶",
+          "variants": [
+            { "code": "m", "label": "中", "price": 30 },
+            { "code": "l", "label": "大", "price": 35 },
+            { "code": "x", "label": "特大", "price": 40 }
+          ]
+        },
+        {
+          "id": "d6",
+          "name": "奶綠",
+          "variants": [
+            { "code": "m", "label": "中", "price": 30 },
+            { "code": "l", "label": "大", "price": 35 },
+            { "code": "x", "label": "特大", "price": 40 }
+          ]
+        },
+        {
+          "id": "d7",
+          "name": "紅茶牛乳",
+          "variants": [
+            { "code": "l", "label": "大", "price": 40 },
+            { "code": "x", "label": "特大", "price": 45 }
+          ]
+        },
+        {
+          "id": "d8",
+          "name": "綠茶牛乳",
+          "variants": [
+            { "code": "l", "label": "大", "price": 40 },
+            { "code": "x", "label": "特大", "price": 45 }
+          ]
+        },
+        {
+          "id": "d9",
+          "name": "芒果綠茶",
+          "variants": [
+            { "code": "l", "label": "大", "price": 40 },
+            { "code": "x", "label": "特大", "price": 45 }
+          ]
+        },
+        {
+          "id": "d10",
+          "name": "研磨咖啡",
+          "variants": [
+            { "code": "m", "label": "中", "price": 30 },
+            { "code": "x", "label": "特大", "price": 50 }
+          ]
+        },
+        {
+          "id": "d11",
+          "name": "拿鐵咖啡",
+          "variants": [
+            { "code": "m", "label": "中", "price": 40 },
+            { "code": "x", "label": "特大", "price": 70 }
+          ]
+        },
+        { "id": "d12", "name": "牛乳", "price": 35, "note": "中杯" },
+        {
+          "id": "d13",
+          "name": "重乳紅茶牛乳",
+          "variants": [
+            { "code": "l", "label": "大", "price": 45 },
+            { "code": "x", "label": "特大", "price": 55 }
+          ]
+        },
+        {
+          "id": "d14",
+          "name": "重乳綠茶牛乳",
+          "variants": [
+            { "code": "l", "label": "大", "price": 45 },
+            { "code": "x", "label": "特大", "price": 55 }
+          ]
+        }
+      ]
+    }
+  ]
+}

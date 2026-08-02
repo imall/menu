@@ -1,11 +1,25 @@
+/** 同一品項的價格變化，例如飲料的中／大／特大、蛋餅的原味／特酥 */
+export interface Variant {
+  /** 會進網址的短代號，同一品項內唯一，不可含 . 或 _ */
+  code: string
+  label: string
+  price: number
+}
+
 export interface MenuItem {
   id: string
   name: string
-  price: number
+  /** 單一價格品項用 price，多價格品項用 variants，兩者擇一 */
+  price?: number
+  variants?: Variant[]
+  /** 小字補充，例如「冬季限定 12月~2月」 */
+  note?: string
 }
 
 export interface MenuGroup {
   title: string
+  /** 分類層級的說明，例如「皆加蛋」 */
+  note?: string
   items: MenuItem[]
 }
 
@@ -18,6 +32,8 @@ export interface Phone {
 /** 各店 menu.json 的形狀 */
 export interface StoreMenu {
   phones: Phone[]
+  /** 顯示在菜單最上方的全店公告，例如升級套餐規則 */
+  notes?: string[]
   groups: MenuGroup[]
 }
 

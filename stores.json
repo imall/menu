@@ -12,5 +12,19 @@
       "ok": "#5fae3a",
       "danger": "#d62828"
     }
+  },
+  {
+    "slug": "zaoan",
+    "name": "早安山丘",
+    "logo": "早安{山丘}",
+    "tagline": "中西式早餐・現做蛋餅吐司",
+    "emoji": "🌄",
+    "theme": {
+      "brand": "#2f9a8f",
+      "brandTo": "#5fc9ba",
+      "accent": "#ffd54a",
+      "ok": "#1f7a70",
+      "danger": "#d1495b"
+    }
   }
 ]

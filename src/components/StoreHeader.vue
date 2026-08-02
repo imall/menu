@@ -41,7 +41,8 @@ const goHome = (event: MouseEvent) => {
       }}</span>
     </div>
 
-    <div class="mt-1 text-sm opacity-95">
+    <!-- 有些店家沒提供訂購電話，整行連標題一起省掉 -->
+    <div v-if="menu.phones.length" class="mt-1 text-sm opacity-95">
       訂購電話
       <template v-for="(phone, i) in menu.phones" :key="phone.tel">
         <span v-if="i > 0">｜</span>

@@ -35,7 +35,21 @@ pnpm preview    # 預覽建置結果
 - 品項 `id` 只需在同一家店內唯一，不同店可以重複。
 - **已上線的品項 id 不要改動**，否則之前分享出去的訂單連結會對不上。
 - `logo` 用大括號標記要套 accent 色的字，例如 `"3{Q} 脆皮雞排"`。
+- 沒有訂購電話就寫 `"phones": []`，header 會整行省掉。
 - `menu.json` 的欄位由 TypeScript 依 `src/types.ts` 的 `StoreMenu` 驗證，寫錯會在 `pnpm build` 就報錯。
+
+## 品項選項（variants）
+
+同一品項有多種價格時（飲料的中／大／特大、蛋餅的原味／特酥、單點／套餐），改用 `variants` 取代 `price`：
+
+```json
+{ "id": "d1", "name": "紅茶", "variants": [
+  { "code": "m", "label": "中", "price": 20 },
+  { "code": "l", "label": "大", "price": 25 }
+]}
+```
+
+每個選項在畫面上各佔一列數量，因此可以同時點「2 杯中杯 + 1 杯大杯」。訂單的鍵是 `id~code`（例 `d1~m`），`~` 與 `.` `_` 一樣是 URL unreserved 字元不會被跳脫，也不含 `.` 所以解碼的切段邏輯不受影響。`code` 只需在同一品項內唯一。
 
 ## 架構
 
