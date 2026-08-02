@@ -715,6 +715,113 @@
           ]
         }
       ]
+    },
+    {
+      "title": "素食・吐司／丹麥",
+      "note": "果醬類請見上方「果醬系列」，口味皆為素食",
+      "items": [
+        {
+          "id": "vt1",
+          "name": "煎蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 30 },
+            { "code": "d", "label": "丹麥", "price": 45 }
+          ]
+        },
+        {
+          "id": "vt2",
+          "name": "起司蛋",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 40 },
+            { "code": "d", "label": "丹麥", "price": 55 }
+          ]
+        },
+        {
+          "id": "vt3",
+          "name": "蔬菜蛋",
+          "variants": [{ "code": "t", "label": "吐司", "price": 40 }]
+        },
+        {
+          "id": "vt4",
+          "name": "素肉鬆",
+          "note": "★ 可做全素，請先告知",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 45 },
+            { "code": "d", "label": "丹麥", "price": 60 }
+          ]
+        },
+        {
+          "id": "vt5",
+          "name": "薯餅蛋",
+          "note": "★ 可做全素，請先告知",
+          "variants": [
+            { "code": "t", "label": "吐司", "price": 50 },
+            { "code": "d", "label": "丹麥", "price": 65 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "素食・漢堡",
+      "note": "換菠蘿 +20",
+      "items": [
+        {
+          "id": "vb1",
+          "name": "煎蛋",
+          "variants": [
+            { "code": "b", "label": "漢堡", "price": 30 },
+            { "code": "p", "label": "菠蘿", "price": 50 }
+          ]
+        },
+        {
+          "id": "vb2",
+          "name": "起司蛋",
+          "variants": [
+            { "code": "b", "label": "漢堡", "price": 40 },
+            { "code": "p", "label": "菠蘿", "price": 60 }
+          ]
+        },
+        {
+          "id": "vb3",
+          "name": "素肉鬆",
+          "note": "★ 可做全素，請先告知",
+          "variants": [
+            { "code": "b", "label": "漢堡", "price": 45 },
+            { "code": "p", "label": "菠蘿", "price": 65 }
+          ]
+        },
+        {
+          "id": "vb4",
+          "name": "薯餅蛋",
+          "note": "★ 可做全素，請先告知",
+          "variants": [
+            { "code": "b", "label": "漢堡", "price": 50 },
+            { "code": "p", "label": "菠蘿", "price": 70 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "素食・燒餅",
+      "items": [
+        { "id": "vs1", "name": "燒餅蛋", "price": 35 },
+        { "id": "vs2", "name": "起司蛋", "price": 45 },
+        { "id": "vs3", "name": "蔬菜蛋", "price": 45 },
+        { "id": "vs4", "name": "素肉鬆", "price": 50, "note": "★ 可做全素，請先告知" }
+      ]
+    },
+    {
+      "title": "素食・菠蘿堡",
+      "items": [
+        { "id": "vp1", "name": "起司菠蘿堡", "price": 35 },
+        { "id": "vp2", "name": "花生起司菠蘿堡", "price": 45 }
+      ]
+    },
+    {
+      "title": "素食・潛艇堡",
+      "items": [
+        { "id": "vu1", "name": "蔬菜", "price": 50, "note": "★ 可做全素，請先告知" }
+      ]
     }
   ]
 }
