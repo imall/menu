@@ -24,7 +24,10 @@ const count = computed(() => order.countOf(props.item))
     <div v-if="!item.variants?.length" class="flex items-center justify-between gap-2">
       <div>
         <div class="text-base font-bold">{{ item.name }}</div>
-        <div class="mt-0.5 text-sm font-bold text-danger">${{ item.price }}</div>
+        <!-- price 為 0 代表時價，顯示金額會誤導 -->
+        <div class="mt-0.5 text-sm font-bold text-danger">
+          {{ item.price ? `$${item.price}` : '時價' }}
+        </div>
         <div v-if="item.note" class="mt-0.5 text-xs text-neutral-500">{{ item.note }}</div>
       </div>
       <QtyStepper :order-key="item.id" :label="item.name" />

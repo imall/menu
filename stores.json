@@ -26,5 +26,19 @@
       "ok": "#1f7a70",
       "danger": "#d1495b"
     }
+  },
+  {
+    "slug": "lulu",
+    "name": "蕗蕗花嘴",
+    "logo": "蕗蕗{花嘴}",
+    "tagline": "手作吐司・早午餐・拌麵",
+    "emoji": "🍞",
+    "theme": {
+      "brand": "#e0518c",
+      "brandTo": "#f58fb5",
+      "accent": "#ffe066",
+      "ok": "#c23f76",
+      "danger": "#d6336c"
+    }
   }
 ]

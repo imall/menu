@@ -31,7 +31,8 @@ export interface Phone {
 
 /** 各店 menu.json 的形狀 */
 export interface StoreMenu {
-  phones: Phone[]
+  /** 沒提供訂購電話的店家可以整個省略 */
+  phones?: Phone[]
   /** 顯示在菜單最上方的全店公告，例如升級套餐規則 */
   notes?: string[]
   groups: MenuGroup[]

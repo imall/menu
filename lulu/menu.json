@@ -1,0 +1,174 @@
+{
+  "groups": [
+    {
+      "title": "吐司 漢堡",
+      "note": "內含：蘿蔓、起司、番茄片、生洋蔥、墨西哥辣椒、酸黃瓜、黃芥末（壓扁漢堡排不含蘿蔓與番茄片），有不吃的先跟蕗蕗說！抹醬可選：奶油／福源花生醬／焦糖醬。",
+      "items": [
+        {
+          "id": "b1",
+          "name": "鮮蔬",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 110 },
+            { "code": "h", "label": "黑麥漢堡", "price": 110 }
+          ]
+        },
+        {
+          "id": "b2",
+          "name": "莫札瑞拉",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 120 },
+            { "code": "h", "label": "黑麥漢堡", "price": 120 }
+          ]
+        },
+        {
+          "id": "b3",
+          "name": "手炒肉絲",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 150 },
+            { "code": "h", "label": "黑麥漢堡", "price": 150 }
+          ]
+        },
+        {
+          "id": "b4",
+          "name": "秘製肉排",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 150 },
+            { "code": "h", "label": "黑麥漢堡", "price": 150 }
+          ]
+        },
+        {
+          "id": "b5",
+          "name": "洋蔥牛五花",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 150 },
+            { "code": "h", "label": "黑麥漢堡", "price": 150 }
+          ]
+        },
+        {
+          "id": "b6",
+          "name": "惡魔辣雞",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 160 },
+            { "code": "h", "label": "黑麥漢堡", "price": 160 }
+          ]
+        },
+        {
+          "id": "b7",
+          "name": "珠珠蝦",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 160 },
+            { "code": "h", "label": "黑麥漢堡", "price": 160 }
+          ]
+        },
+        {
+          "id": "b8",
+          "name": "厚牛漢堡排",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 170 },
+            { "code": "h", "label": "黑麥漢堡", "price": 170 }
+          ]
+        },
+        {
+          "id": "b9",
+          "name": "究好豬培根",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 180 },
+            { "code": "h", "label": "黑麥漢堡", "price": 180 }
+          ]
+        },
+        {
+          "id": "b10",
+          "name": "壓扁漢堡排",
+          "note": "沒有歐姆蛋",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 150 },
+            { "code": "h", "label": "黑麥漢堡", "price": 150 }
+          ]
+        },
+        {
+          "id": "b11",
+          "name": "貓王培根",
+          "note": "沒有歐姆蛋・花生＋草莓醬",
+          "variants": [
+            { "code": "t", "label": "山形吐司", "price": 170 },
+            { "code": "h", "label": "黑麥漢堡", "price": 170 }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "早午餐",
+      "note": "附主食抹醬（山形吐司：奶油／花生／焦糖／草莓奶油／巧克力｜黑麥漢堡：奶油／花生／焦糖）、蛋（歐姆蛋或太陽蛋，太陽蛋可選全熟／半熟）、飲料（林華泰紅茶或鮮奶茶，可選冰／熱、有糖／無糖）。",
+      "items": [
+        { "id": "l1", "name": "秘製肉排", "price": 280 },
+        { "id": "l2", "name": "手炒肉絲", "price": 280 },
+        { "id": "l3", "name": "珠珠蝦", "price": 310 },
+        { "id": "l4", "name": "惡魔辣雞", "price": 310 },
+        { "id": "l5", "name": "厚牛漢堡排", "price": 320 },
+        { "id": "l6", "name": "究好豬培根", "price": 330 }
+      ]
+    },
+    {
+      "title": "甜吐司",
+      "items": [
+        { "id": "s1", "name": "烤焦糖", "price": 40, "note": "薄片" },
+        { "id": "s2", "name": "烤花生", "price": 40, "note": "薄片" },
+        { "id": "s3", "name": "草莓奶油", "price": 40, "note": "薄片" },
+        { "id": "s4", "name": "雙重起司", "price": 90, "note": "薄片" },
+        { "id": "s5", "name": "可可脆脆", "price": 60, "note": "厚片" },
+        { "id": "s6", "name": "肉桂法式", "price": 90, "note": "厚片" }
+      ]
+    },
+    {
+      "title": "拌麵",
+      "note": "含 太陽蛋、炒洋蔥、辣高麗菜、青菜，蛋可選全熟／半熟。幫我加：手炒培根、香濃皮蛋醬（+$30）。",
+      "items": [
+        { "id": "n1", "name": "秘製肉排", "price": 135 },
+        { "id": "n2", "name": "手炒肉絲", "price": 135 },
+        { "id": "n3", "name": "德式香腸", "price": 135 },
+        { "id": "n4", "name": "洋蔥牛五花", "price": 135 },
+        { "id": "n5", "name": "蟹肉歐姆蛋", "price": 135 },
+        { "id": "n6", "name": "珠珠蝦", "price": 155 },
+        { "id": "n7", "name": "皮蛋肉絲", "price": 160 },
+        { "id": "n8", "name": "厚牛漢堡排", "price": 160 },
+        { "id": "n9", "name": "惡魔辣雞", "price": 160 },
+        { "id": "n10", "name": "究好豬培根", "price": 180 }
+      ]
+    },
+    {
+      "title": "喝飲料",
+      "note": "茶類可選 冰／熱、有糖／無糖",
+      "items": [
+        { "id": "d1", "name": "林華泰紅茶", "price": 40 },
+        { "id": "d2", "name": "可口可樂", "price": 40 },
+        { "id": "d3", "name": "鮮奶茶", "price": 55 }
+      ]
+    },
+    {
+      "title": "加點",
+      "items": [
+        { "id": "a1", "name": "莫札瑞拉起司", "price": 20 },
+        { "id": "a2", "name": "太陽蛋", "price": 20 },
+        { "id": "a3", "name": "德式香腸", "price": 35 },
+        { "id": "a4", "name": "歐姆蛋", "price": 40 },
+        { "id": "a5", "name": "秘製肉排", "price": 65 },
+        { "id": "a6", "name": "洋蔥牛五花", "price": 65 },
+        { "id": "a7", "name": "惡魔辣雞", "price": 80 },
+        { "id": "a8", "name": "珠珠蝦", "price": 85 },
+        { "id": "a9", "name": "厚牛漢堡排", "price": 90 },
+        { "id": "a10", "name": "究好豬培根", "price": 110 }
+      ]
+    },
+    {
+      "title": "蕗蕗特製",
+      "items": [
+        {
+          "id": "x1",
+          "name": "蕗蕗特製",
+          "price": 0,
+          "note": "時價 — 這可不是每天都有，想吃請自己問蕗蕗"
+        }
+      ]
+    }
+  ]
+}
