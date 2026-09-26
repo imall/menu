@@ -40,5 +40,19 @@
       "ok": "#c23f76",
       "danger": "#d6336c"
     }
+  },
+  {
+    "slug": "60",
+    "name": "60 快炒",
+    "logo": "{60} 快炒",
+    "tagline": "熱炒・燴飯炒麵・黑白切・湯品",
+    "emoji": "🍳",
+    "theme": {
+      "brand": "#7b4fa6",
+      "brandTo": "#a77fd1",
+      "accent": "#ffd23f",
+      "ok": "#5e3a85",
+      "danger": "#d1495b"
+    }
   }
 ]
