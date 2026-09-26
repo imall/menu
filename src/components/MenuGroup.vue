@@ -14,7 +14,7 @@ defineProps<{ group: MenuGroup }>()
       }}</span>
     </h2>
     <div class="grid grid-cols-[repeat(auto-fill,minmax(220px,1fr))] gap-2.5">
-      <ItemCard v-for="item in group.items" :key="item.id" :item="item" />
+      <ItemCard v-for="item in group.items" :key="item.id" :item="item" :spicy="group.spicy" />
     </div>
   </section>
 </template>

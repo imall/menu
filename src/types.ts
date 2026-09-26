@@ -20,6 +20,8 @@ export interface MenuGroup {
   title: string
   /** 分類層級的說明，例如「皆加蛋」 */
   note?: string
+  /** 此分類的單一價格品項可勾選「加辣」，加辣份數另計一行並標註備註 */
+  spicy?: boolean
   items: MenuItem[]
 }
 

@@ -7,6 +7,8 @@ interface IndexedItem {
   /** 有選項的品項才有，例如「大」「特酥」 */
   variant?: string
   price: number
+  /** 明細與分享文字上的備註，例如「加辣」 */
+  remark?: string
   /** 菜單上的原始排序，讓明細順序永遠跟菜單一致 */
   order: number
 }
@@ -18,6 +20,12 @@ interface IndexedItem {
  */
 export const orderKey = (item: MenuItem, code?: string) =>
   code === undefined ? item.id : `${item.id}~${code}`
+
+/**
+ * 加辣份數的鍵，借用選項的 id~code 格式，所以網址編解碼不用改。
+ * ponytail: 只支援單一價格品項，有 variants 的品項要加辣得改成 id~code~s 之類的組合鍵
+ */
+export const spicyKey = (item: MenuItem) => orderKey(item, 's')
 
 export const useOrderStore = defineStore('order', () => {
   const qty = reactive<Record<string, number>>({})
@@ -39,7 +47,7 @@ export const useOrderStore = defineStore('order', () => {
 
   /** 一個品項底下所有選項的總數，用來決定卡片要不要highlight */
   const countOf = (item: MenuItem) => {
-    if (!item.variants?.length) return qty[item.id] ?? 0
+    if (!item.variants?.length) return (qty[item.id] ?? 0) + (qty[spicyKey(item)] ?? 0)
     return item.variants.reduce((s, v) => s + (qty[orderKey(item, v.code)] ?? 0), 0)
   }
 
@@ -53,6 +61,7 @@ export const useOrderStore = defineStore('order', () => {
           key,
           qty: qty[key]!,
           price: entry.price,
+          remark: entry.remark,
           // 明細與分享文字都用這個名稱，才看得出點的是哪個選項
           label: entry.variant ? `${entry.name}（${entry.variant}）` : entry.name,
         }
@@ -113,6 +122,9 @@ export const useOrderStore = defineStore('order', () => {
           })
         } else {
           itemMap[i.id] = { name: i.name, price: i.price ?? 0, order: order++ }
+          if (g.spicy) {
+            itemMap[spicyKey(i)] = { name: i.name, price: i.price ?? 0, remark: '加辣', order: order++ }
+          }
         }
       }),
     )

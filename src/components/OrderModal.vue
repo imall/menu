@@ -33,6 +33,9 @@ const resetAll = () => {
             <span class="ml-1.5 text-[13px] text-neutral-500"
               >${{ line.price }} × {{ line.qty }}</span
             >
+            <div v-if="line.remark" class="text-[13px] font-bold text-danger">
+              備註：{{ line.remark }}
+            </div>
           </div>
           <div class="font-bold text-danger">${{ line.price * line.qty }}</div>
         </div>

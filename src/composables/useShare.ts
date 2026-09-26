@@ -13,7 +13,9 @@ export const useShare = () => {
 
   const shareText = () => {
     const lines = order.orderLines.map(
-      (l) => `${l.label} $${l.price} × ${l.qty} = $${l.price * l.qty}`,
+      (l) =>
+        `${l.label} $${l.price} × ${l.qty} = $${l.price * l.qty}` +
+        (l.remark ? `（備註：${l.remark}）` : ''),
     )
     return [
       `${meta.emoji} ${meta.name} 訂單`,

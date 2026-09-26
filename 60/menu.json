@@ -12,6 +12,7 @@
   "groups": [
     {
       "title": "飯麵粥類",
+      "spicy": true,
       "items": [
         {
           "id": "r1",
@@ -167,6 +168,7 @@
     },
     {
       "title": "黑白切類",
+      "spicy": true,
       "items": [
         {
           "id": "c1",
@@ -197,6 +199,7 @@
     },
     {
       "title": "快炒類",
+      "spicy": true,
       "items": [
         {
           "id": "f1",
