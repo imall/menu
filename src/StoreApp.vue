@@ -31,7 +31,12 @@ onMounted(() => {
       <p v-for="(note, i) in menu.notes" :key="i">{{ note }}</p>
     </div>
 
-    <MenuGroup v-for="group in menu.groups" :key="group.title" :group="group" />
+    <MenuGroup
+      v-for="(group, i) in menu.groups"
+      :id="`group-${i}`"
+      :key="group.title"
+      :group="group"
+    />
   </main>
 
   <OrderBar @open="showModal = true" />

@@ -20,6 +20,15 @@ const goHome = (event: MouseEvent) => {
     event.preventDefault()
   }
 }
+
+// header 是 sticky，捲動時要扣掉它的高度，分類標題才不會被蓋住
+const jumpTo = (i: number, event: MouseEvent) => {
+  const el = document.getElementById(`group-${i}`)
+  const header = (event.currentTarget as HTMLElement).closest('header')
+  if (!el || !header) return
+  const top = el.getBoundingClientRect().top + window.scrollY - header.offsetHeight - 8
+  window.scrollTo({ top, behavior: 'smooth' })
+}
 </script>
 
 <template>
@@ -53,5 +62,20 @@ const goHome = (event: MouseEvent) => {
         >
       </template>
     </div>
+
+    <nav
+      v-if="menu.groups.length > 1"
+      class="-mx-4 -mb-[18px] mt-3 flex gap-2 overflow-x-auto bg-black/10 px-4 py-2 whitespace-nowrap [scrollbar-width:none]"
+    >
+      <button
+        v-for="(group, i) in menu.groups"
+        :key="group.title"
+        type="button"
+        class="shrink-0 rounded-full bg-white/20 px-3 py-1 text-[13px] font-bold text-white active:bg-white/40"
+        @click="jumpTo(i, $event)"
+      >
+        {{ group.title }}
+      </button>
+    </nav>
   </header>
 </template>
