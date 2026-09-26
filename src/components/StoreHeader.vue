@@ -65,7 +65,7 @@ const jumpTo = (i: number, event: MouseEvent) => {
 
     <nav
       v-if="menu.groups.length > 1"
-      class="-mx-4 -mb-[18px] mt-3 flex gap-2 overflow-x-auto bg-black/10 px-4 py-2 whitespace-nowrap [scrollbar-width:none]"
+      class="-mx-4 -mb-[18px] mt-3 flex gap-2 overflow-x-auto bg-black/10 px-4 py-2 whitespace-nowrap [scrollbar-width:none] sm:hidden"
     >
       <button
         v-for="(group, i) in menu.groups"
